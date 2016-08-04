@@ -1,19 +1,25 @@
 {
   "name": "verndaletest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Verndale Test 01",
+  "main": "app.js",
   "scripts": {
-    "build": "browserify app.js -o bundle.js"
+    "build": "browserify app.js -o bundle.js",
+    "watch": "watchify app.js -o bundle.js"
   },
-  "author": "Kevin Williams <kevin@kevinw.me>",
-  "license": "ISC",
+  "author": "Kevin Williams <kevin@kevinw.me> (http://kevinw.me)",
+  "license": "MIT",
   "dependencies": {
-  	"browserify": "^13.1.0",
-    "grunt": "^1.0.1"
+    "browserify": "^13.1.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "jquery": "^3.1.0"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "jquery": "^3.1.0",
+    "watchify": "^3.7.0"
   }
 }
