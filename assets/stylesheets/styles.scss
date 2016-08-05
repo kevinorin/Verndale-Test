@@ -1,0 +1,136 @@
+@import "partials/colors";
+@import "partials/fonts";
+
+body .container {
+	max-width: 992px;
+	margin-top: 86px;
+}
+
+.clear {
+	clear: both;
+}
+br.rlb {
+	display: block;
+}
+
+.row .mid-well {
+	margin: 0 24px;
+}
+.row.featured {
+	p {
+		color:$white;
+		a.spacey {
+			line-height: 36px;
+		}
+	}
+	.col-sm-4 {
+		padding-left: 12px;
+		padding-right: 12px;
+ 		.box {
+    	height: 100%;
+    	padding: 15px;
+  		a.btn.btn-secondary {
+			  background: $white;
+			  border-radius: 0;
+			  float: right;
+			  font-size: 14px;
+			  font-weight: 600;
+			  text-transform: uppercase;
+			  text-decoration: none !important;
+			  padding: 5px 0px 1px;
+			  line-height: 24px;
+			  text-align: center;
+			}
+			img {
+	    	width: 100%;
+	    }
+    }
+  }
+  .blue.box {
+  	background: $mdblue;
+  	border: 10px solid $ltblue;
+  	a.btn.btn-secondary {
+  		border: 3px solid $ltblue;
+		  color: $mdblue;
+	  }
+  }
+  .yellow.box {
+  	background: $mdyellow;
+  	border: 10px solid $ltyellow;
+  	p, a {
+			color:$black;
+		}
+  	a.btn.btn-secondary {
+  		border: 3px solid $ltyellow;
+		  color: $black;			  
+		}
+  }
+}
+
+.blue.box a.btn:hover {
+	border: 3px solid $white !important;
+	background: $ltblue !important;
+	color: $white !important;
+}
+.yellow.box a.btn:hover {
+	border: 3px solid $white !important;
+	background: $ltyellow !important;
+	color: $white !important;
+}
+
+@media only screen and (min-width : 769px) {
+.row.featured {
+	.col-sm-4 {
+	  .box {
+	  	min-height: 480px;
+	  	a.btn.btn-secondary {
+				padding: 0 5%;
+			  position: absolute;
+			  bottom: 0;
+			  right: 0;
+			}
+  	}
+	}
+}
+
+
+@media only screen and (min-width : 768px) {
+	.row.featured {
+		.col-sm-4 {
+		  .box {
+		  	overflow: visible;
+		  	a.btn.btn-secondary {
+			    line-height: 24px;
+			    padding: 0 5%;
+			    position: relative;
+		  	}
+		  }
+	  }
+	  br.rlb {
+			display: inline;
+		}
+	}
+  .table-row {
+      display: table;
+  }
+  .table-row [class*="col-"] {
+      float: none;
+      display: table-cell;
+      vertical-align: top;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+	.row.featured {
+		.col-sm-4 {
+		  .box {
+		  	padding: 10px;
+		  	a.btn.btn-secondary {
+		  		margin: 0 auto;
+		  		width: 100%;
+	 			}
+ 			}
+		}
+	}
+}
+}
